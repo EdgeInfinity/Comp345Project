@@ -1,1 +1,1 @@
-this repo is for our comp 345 project based on the talisman game rofflcopter
+this repo is for our comp 345 project based on the talisman game roflcopter
