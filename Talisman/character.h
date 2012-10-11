@@ -8,6 +8,10 @@ class Character
 public:
     Character();
 
+    //saving or opening files for characters
+    void saveFile();
+    void loadFile();
+
     //getters and setters
     String getName();
     void setName();
