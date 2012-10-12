@@ -1,18 +1,19 @@
 #include "character.h"
-#include <String>
-#include <fstream>
+#include <QString>
+#include <iostream>
 using namespace std;
 
 Character::Character()
-{
+{    
+
 }
 
-Character::Character(String fname)
-    {
-        loadFile(fname);
-    }
+//Character::Character(QString fname)
+//    {
+//        loadFile(fname);
+//    }
 
-Character::Character(String na,int li,int st, int cr, int fa, int co)
+Character::Character(QString na,int li,int st, int cr, int fa, int co)
 {
     name = na;
     lives = li;
@@ -22,14 +23,16 @@ Character::Character(String na,int li,int st, int cr, int fa, int co)
     coins = co;
 }
 
+
     //file load and save
 
     //this will save the data stored in this character class in a file
     //with the name matching the character
 
-void saveFile();
+void Character::saveFile()
 {
-        ofstream savefile (name + ".tcd");
+        ofstream savefile;
+        savefile.open(name + ".tcd");
         //tcd will stand for Talisman Character Data
         if (savefile.is_open())
         {
@@ -48,9 +51,10 @@ void saveFile();
  }
 
     //this will load a character
-    void loadFile(String fname);
+    void Character::loadFile(String fname)
     {
-        ifstream loadfile (fname + ".tcd");
+        ifstream loadfile;
+        loadfile.open(fname + ".tcd");
         if (loadfile.is_open())
         {
             name = getline (loadfile,line);
@@ -68,51 +72,51 @@ void saveFile();
     }
 
     //getters and setters
-    String getName();
+    QString Character::getName()
     {
         return name;
     }
-    void setName(String n);
+    void Character::setName(QString n)
     {
         name = n;
     }
-    int getLives();
+    int Character::getLives()
     {
         return lives;
     }
-    void setLives(int l);
+    void Character::setLives(int l)
     {
         lives = l;
     }
-    int getStr();
+    int Character::getStr()
     {
         return Str;
     }
-    void setStr(int s);
+    void Character::setStr(int s)
     {
         str = s;
     }
-    int getCraft();
+    int Character::getCraft()
     {
         return craft;
     }
-    void setCraft(int c);
+    void Character::setCraft(int c)
     {
         craft = c;
     }
-    int getFate();
+    int Character::getFate()
     {
         return fate;
     }
-    void setFate(int fa);
+    void Character::setFate(int fa)
     {
         fate = fa;
     }
-    int getCoins();
+    int Character::getCoins()
     {
         return coins;
     }
-    void setCoins(int coi);
+    void Character::setCoins(int coi)
     {
         coi = coins;
     }

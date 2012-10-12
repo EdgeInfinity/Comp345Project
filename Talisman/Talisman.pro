@@ -14,11 +14,14 @@ SOURCES += main.cpp\
         talismangame.cpp \
     character.cpp \
     mappiece.cpp \
-    map.cpp
+    map.cpp \
+    charactergenerator.cpp
 
 HEADERS  += talismangame.h \
     character.h \
     mappiece.h \
-    map.h
+    map.h \
+    charactergenerator.h
 
-FORMS    += talismangame.ui
+FORMS    += talismangame.ui \
+    charactergenerator.ui

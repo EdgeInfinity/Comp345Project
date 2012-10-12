@@ -1,19 +1,21 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
-#include<String>
+#include<QString>
 
 class Character
 {
 public:
     Character();
+    Character(QString fname);
+    Character(QString na,int li,int st, int cr, int fa, int co);
 
     //saving or opening files for characters
     void saveFile();
     void loadFile();
 
     //getters and setters
-    String getName();
+    QString getName();
     void setName();
     int getLives();
     void setLives();
@@ -28,7 +30,7 @@ public:
 
 private:
 
-    String name;
+    QString name;
     int lives;
     int str;
     int craft;
