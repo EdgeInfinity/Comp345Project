@@ -148,6 +148,8 @@ void Character::saveFile()
         return effects[i];
     }
 
+    //location on map
+
     void Character::setLocation(int r, int p)
     {
         locRegion = r;

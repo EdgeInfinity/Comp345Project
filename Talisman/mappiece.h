@@ -9,17 +9,16 @@ class MapPiece
 {
 private:
 
-    QString tileName;
-    bool hasChar = false;
+    std::string tileName;
 
 
 
 public:
     MapPiece();
-    getName();
-    setName();
-    getChar();
-    setChar();
+    MapPiece(std::string);
+    std::string getName();
+    void setName(std::string);
+
 };
 
 #endif // MAPPIECE_H

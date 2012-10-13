@@ -1,41 +1,57 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
-#include<QString>
+
+#include<string>
+
+//the character will track it's own location on the map
 
 class Character
 {
 public:
     Character();
-    Character(QString fname);
-    Character(QString na,int li,int st, int cr, int fa, int co);
+    //Character(std::string fname);
+    Character(std::string na,int li,int st, int cr, int fa, int co);
 
     //saving or opening files for characters
-    void saveFile();
-    void loadFile();
+    //void saveFile();
+    //void loadFile();
+
 
     //getters and setters
-    QString getName();
-    void setName();
+    std::string getName();
+    void setName(std::string);
     int getLives();
-    void setLives();
+    void setLives(int);
     int getStr();
-    void setStr();
+    void setStr(int);
     int getCraft();
-    void setCraft();
+    void setCraft(int);
     int getFate();
-    void setFate();
+    void setFate(int);
     int getCoins();
-    void setCoins();
+    void setCoins(int);
+
+    void setEffects(std::string,std::string,std::string);
+    std::string getEffects(int); //returns effect of the passed int
+
+    void setLocation(int, int);
+    int getRegion();
+    int getPlace();
 
 private:
 
-    QString name;
+    std::string name;
     int lives;
     int str;
     int craft;
     int fate;
     int coins;
+    std::string effects [3];
+
+    int locRegion;//region
+    int locPlace;//map piece
+
 };
 
 

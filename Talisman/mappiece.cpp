@@ -8,29 +8,21 @@ MapPiece::MapPiece()
     tileName = "UNNAMED";
 }
 
-MapPiece::MapPiece(QString na)
+MapPiece::MapPiece(string na)
 {
     tileName = na;
 }
 
-QString getName()
+string MapPiece::getName()
 {
     return tileName;
 }
 
-void setName(QString nam)
+void MapPiece::setName(string nam)
 {
     tileName = nam;
 }
 
-bool hasChar()
-{
-    return hasChar;
-}
 
-void setChar(bool cha)
-{
-    hasChar = cha;
-}
 
 
