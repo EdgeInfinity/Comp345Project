@@ -39,7 +39,11 @@ public:
     int getRegion();
     int getPlace();
 
-private:
+    //print for consol
+
+    void display();
+
+
 
     std::string name;
     int lives;
@@ -47,6 +51,9 @@ private:
     int craft;
     int fate;
     int coins;
+
+    int alignment; //0= evil, 1= neutral, 2 = good
+
     std::string effects [3];
 
     int locRegion;//region

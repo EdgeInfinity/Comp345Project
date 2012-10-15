@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'talismangame.ui'
 **
-** Created: Fri Oct 12 18:03:05 2012
+** Created: Mon Oct 15 18:21:14 2012
 **      by: Qt User Interface Compiler version 4.8.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -17,6 +17,7 @@
 #include <QtGui/QHeaderView>
 #include <QtGui/QMainWindow>
 #include <QtGui/QMenuBar>
+#include <QtGui/QPushButton>
 #include <QtGui/QStatusBar>
 #include <QtGui/QToolBar>
 #include <QtGui/QWidget>
@@ -27,6 +28,9 @@ class Ui_TalismanGame
 {
 public:
     QWidget *centralWidget;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -38,6 +42,15 @@ public:
         TalismanGame->resize(400, 300);
         centralWidget = new QWidget(TalismanGame);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(120, 20, 121, 31));
+        pushButton_2 = new QPushButton(centralWidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(120, 70, 121, 31));
+        pushButton_3 = new QPushButton(centralWidget);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setGeometry(QRect(120, 120, 121, 31));
         TalismanGame->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(TalismanGame);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -58,6 +71,9 @@ public:
     void retranslateUi(QMainWindow *TalismanGame)
     {
         TalismanGame->setWindowTitle(QApplication::translate("TalismanGame", "TalismanGame", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("TalismanGame", "Character Generator", 0, QApplication::UnicodeUTF8));
+        pushButton_2->setText(QApplication::translate("TalismanGame", "Play Game", 0, QApplication::UnicodeUTF8));
+        pushButton_3->setText(QApplication::translate("TalismanGame", "Map Editor", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

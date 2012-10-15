@@ -17,7 +17,8 @@ SOURCES += main.cpp\
     map.cpp \
     charactergenerator.cpp \
     mapedit.cpp \
-    fighter.cpp
+    fighter.cpp \
+    valkyrie.cpp
 
 HEADERS  += talismangame.h \
     character.h \
@@ -25,7 +26,8 @@ HEADERS  += talismangame.h \
     map.h \
     charactergenerator.h \
     mapedit.h \
-    fighter.h
+    fighter.h \
+    valkyrie.h
 
 FORMS    += talismangame.ui \
     charactergenerator.ui \

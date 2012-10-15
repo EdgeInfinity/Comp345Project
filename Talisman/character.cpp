@@ -148,6 +148,8 @@ void Character::saveFile()
         return effects[i];
     }
 
+    //location on map
+
     void Character::setLocation(int r, int p)
     {
         locRegion = r;
@@ -162,4 +164,24 @@ void Character::saveFile()
     {
         return locPlace;
     }
+
+
+    //print
+
+    void Character::display()
+    {
+        cout << "character: " << name <<endl;
+        cout << "life " << lives <<endl;
+        cout << "strength " << str <<endl;
+        cout << "craft " << craft <<endl;
+        cout << "fate " << fate <<endl;
+        cout << "coins" << coins <<endl;
+
+        for(int i=0; i<=2; i++)
+        {
+            cout << "effect " << i+1 << " "<< effects[i]<<endl;
+        }
+
+    }
+
 
