@@ -5,6 +5,11 @@
 #include <string>
 using namespace std;
 
+
+//todo:
+//change map location of character to be in the map itself
+//possibly by having a pointer to a mapPiece
+
 Character::Character()
 {    
 
@@ -165,6 +170,12 @@ void Character::saveFile()
         return locPlace;
     }
 
+    void Character::move(int re, int loc)
+    {
+        locRegion =re;
+        locPlace = loc;
+    }
+
 
     //print
 
@@ -184,4 +195,21 @@ void Character::saveFile()
 
     }
 
-
+    void Character::whereIam()
+    {
+        cout << name << " is located at:" <<endl;
+        cout << "region: ";
+        if (locRegion = 1)
+        {
+            cout << "outer"<<endl;
+        }
+        if (locRegion = 2)
+        {
+            cout << "inner"<<endl;
+        }
+        if (locRegion = 3)
+        {
+            cout << "center"<<endl;
+        }
+        cout << "tile: " << locPlace<<endl;
+    }

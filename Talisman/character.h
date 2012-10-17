@@ -39,9 +39,13 @@ public:
     int getRegion();
     int getPlace();
 
+
+    void move(int re, int loc);
+
     //print for consol
 
     void display();
+    void whereIam();
 
 
 

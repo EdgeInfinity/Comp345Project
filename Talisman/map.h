@@ -15,29 +15,30 @@ private:
 
 public:
     Map();
+    Map(int hor, int ver);
 
     //the 0 will be top left corner and count each piece clockwise
-    MapPiece map_outer [80]; //max of 20 per side
-    MapPiece map_inner [72]; //max of 18 per side
-    MapPiece map_center [256]; //16 squared. pretty big imo, consider reducing
+    MapPiece map_outer [44]; //max of 10 per side
+    MapPiece map_inner [36]; //max of 8 per side
+    MapPiece map_center [36]; //6 squared
 
     int getOutHorz();
-    void setOutHorz();
+    void setOutHorz(int);
 
     int getOutVert();
-    void setOutVert();
+    void setOutVert(int);
 
     int getInnerHorz();
-    void setInnerHorz();
+    void setInnerHorz(int);
 
     int getInnerVert();
-    void setInnerVert();
+    void setInnerVert(int);
 
     int getCenterHorz();
-    void setCenterHorz();
+    void setCenterHorz(int);
 
     int getCenterVert();
-    void setCenterVert();
+    void setCenterVert(int);
 
 };
 
