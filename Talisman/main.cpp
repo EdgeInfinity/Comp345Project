@@ -35,7 +35,7 @@ do
 {
 cout << "\nPlease input map horizontal size: ";
 cin >> hor;
-if ((hor <= 10)||(hor >= 3))
+if ((hor <= 10)&&(hor >= 3))
 {
     inp = true;
 }
@@ -50,7 +50,7 @@ do
 {
 cout << "\nPlease input map vertical size: ";
 cin >> ver;
-if ((ver <= 10)||(ver >= 3))
+if ((ver <= 10)&&(ver >= 3))
 {
     inp = true;
 }
