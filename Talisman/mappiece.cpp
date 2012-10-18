@@ -1,5 +1,5 @@
 #include "mappiece.h"
-#include <QString>
+#include <string>
 
 using namespace std;
 

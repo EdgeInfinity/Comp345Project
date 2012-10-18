@@ -2,7 +2,7 @@
 #ifndef MAPPIECE_H
 #define MAPPIECE_H
 
-#include <QString>
+#include <string>
 
 
 class MapPiece

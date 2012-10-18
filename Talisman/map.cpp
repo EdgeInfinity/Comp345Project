@@ -8,20 +8,23 @@ Map::Map()
 }
 Map::Map(int hor, int ver)//check in main if legal amount
 {
-    int outside = 2* (hor + ver +4);
+    int outside = 2* (hor + ver +2);
     int inn = 2 * (hor + ver);
     int cent = (hor-2)*(ver-2);
     for (int i=0;i<=outside-1;i++)
     {
-        map_outer[i]= new MapPiece();
+        MapPiece temp;
+        map_outer[i]= temp ;
     }
     for (int i=0;i<=inn-1;i++)
     {
-        map_inner[i]= new MapPiece();
+        MapPiece temp;
+        map_inner[i]= temp;
     }
     for (int i=0;i<=cent-1;i++)
     {
-        map_center[i]= new MapPiece();
+        MapPiece temp;
+        map_center[i]= temp;
     }
 }
 
