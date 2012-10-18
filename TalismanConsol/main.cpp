@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
     Lenneth.display();
 
     bool inp = false;
+    bool inp2 = false;
     int hor = 0;
     int ver= 0;
 
@@ -48,13 +49,13 @@ int main(int argc, char *argv[])
     cin >> ver;
     if ((ver <= 10)&&(ver >= 3))
     {
-        inp = true;
+        inp2 = true;
     }
     else
     {
         cout << "\nPlease input an integer value less than 10 and greater than 0"<<endl;
     }
-    }while(inp == false);
+    }while(inp2 == false);
 
     //generate map
 
